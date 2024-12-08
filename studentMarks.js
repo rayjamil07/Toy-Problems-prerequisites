@@ -10,7 +10,7 @@ if(!marks || marks < 0 || marks > 100){
    let grade;
    if(marks > 79){
       grade = 'A';
-   } else if (60 >marks< 79){
+   } else if ( marks >60 && marks <70){
       grade = 'B';
    } else if (49 >marks< 59){
       grade = 'C';
@@ -19,8 +19,8 @@ if(!marks || marks < 0 || marks > 100){
    } else {
       grade = 'E';
    }
-   return 'grade';
+   return grade; 
 }
 }
 
-console.log(studentMarks)
+console.log(studentMarks(71));
